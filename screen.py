@@ -86,6 +86,6 @@ class Screen():
                 layout["Title"].update(
                     Panel(Text(text2art("Screen\nError"), style="red"), border_style="red")
                 )
-        console.print("\n".join(self.logs))
+        #console.print("\n".join(self.logs))
         os.system('clear') or None
         console.print(layout)

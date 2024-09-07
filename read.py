@@ -18,3 +18,7 @@ class Read():
     
     cmd_screen = subparsers.add_parser("screen")
     cmd_screen.add_argument("select", type=str)
+
+    cmd_save = subparsers.add_parser("save")
+
+    cmd_load = subparsers.add_parser("load")
