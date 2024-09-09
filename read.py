@@ -12,7 +12,7 @@ class Read():
     subparsers = parser.add_subparsers(dest="command")
     
     cmd_help = subparsers.add_parser("help")
-    cmd_help.add_argument("command", nargs="?", type=str, default="help")
+    cmd_help.add_argument("cmd", nargs="?", type=str, default="help")
 
     cmd_quit = subparsers.add_parser("quit")
     

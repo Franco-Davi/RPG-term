@@ -6,6 +6,7 @@ from help import Help
 from rich.console import Console
 from time import sleep
 import json
+import os
 
 console = Console()
 screen = Screen()
@@ -49,7 +50,7 @@ class Game():
             args = Read.parser.parse_args(self.command.split())
             match args.command:
                 case "help":
-                    screen.printmenu = help.help(args.command)
+                    screen.printmenu = help.help(args.cmd)
                     screen.log("Showing help")
                 case "quit":
                     screen.update("QUIT")
@@ -84,6 +85,10 @@ class Game():
             screen.log(f"[red]Argument error:[/red] [bright_black]{e}[/bright_black]")
 
     def save(self, slot):
+        try:
+            os.mkdir("save")
+        except:
+            pass
         save = {
             "game": self.__dict__,
             "screen": screen.__dict__,

@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from art import text2art
 from rich.console import Console
 from rich.layout import Layout
@@ -20,7 +21,9 @@ class Screen():
         self.printmenu = ""
 
     def log(self, output=None):
-        line = "[bright_black][{:05}]: [/bright_black]".format(self.ticks) + f'[bright_black]{self.command}[/bright_black]'
+        log_time = datetime.now()
+        log_time = log_time.strftime("%Y-%m-%d %H:%M:%S")
+        line = "[bright_black][{:05} {}]: [/bright_black]".format(self.ticks, log_time) + f'[bright_black]{self.command}[/bright_black]'
         if output is not None:
             self.logs.insert(0, output)
         self.logs.insert(0, line)
