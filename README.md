@@ -13,15 +13,15 @@ Ainda quero deixar este código de certa forma "modular", permitindo que outras 
 
 ## To-Do
 
-[x] - Sistema de leitura de comandos com argumentos usando Argparse;
-[x] - Comandos básicos para teste como 'quit', 'screen' e 'echo';
-[x] - Sistema de log;
-[x] - Sistema de escolha de layout para diferentes momentos do jogo;
-[x] - Criação da classe Player para armazenar os atributos do jogador e os metodos para ações;
-[x] - Sistema de salvamente e carregamento com json;
-[x] - Adição de um comando 'help' para ajudar na utilização do jogo sem consulta externa;
-[ ] - Criação de um sistema de inventário com lista;
-[ ] - Sistema de progressão de jogo estilo livro-jogo apartir da leitura de um json;
-[ ] - Criação de um sistema de combate;
-[ ] - Adicionar a possibilidade de itens com efeitos, desde simples proteção de armadura, até resistências e outras vantagens mágicas;
-[ ] - Adicionar sistema de magia.
+- [x] Sistema de leitura de comandos com argumentos usando Argparse;
+- [x] Comandos básicos para teste como 'quit', 'screen' e 'echo';
+- [x] Sistema de log;
+- [x] Sistema de escolha de layout para diferentes momentos do jogo;
+- [x] Criação da classe Player para armazenar os atributos do jogador e os metodos para ações;
+- [x] Sistema de salvamente e carregamento com json;
+- [x] Adição de um comando 'help' para ajudar na utilização do jogo sem consulta externa;
+- [ ] Criação de um sistema de inventário com lista;
+- [ ] Sistema de progressão de jogo estilo livro-jogo apartir da leitura de um json;
+- [ ] Criação de um sistema de combate;
+- [ ] Adicionar a possibilidade de itens com efeitos, desde simples proteção de armadura, até resistências e outras vantagens mágicas;
+- [ ] Adicionar sistema de magia.
