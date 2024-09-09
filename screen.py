@@ -14,16 +14,17 @@ layout = Layout()
 
 class Screen():
     def __init__(self):
+        self.ticks = None
         self.logs = []
         self.command = None
-        self.ticks = None
+        self.printmenu = ""
 
     def log(self, output=None):
         line = "[bright_black][{:05}]: [/bright_black]".format(self.ticks) + f'[bright_black]{self.command}[/bright_black]'
         if output is not None:
             self.logs.insert(0, output)
         self.logs.insert(0, line)
-    
+        
     def update(self, layout_type="DEBUG"):
         match layout_type:
             case "DEBUG":
@@ -40,23 +41,23 @@ class Screen():
                     Layout(name="Right", ratio=1)
                 )
                 layout["Left"].split_column(
-                    Layout(name="Menu", minimum_size=20),
-                    Layout(name="Console", size=21)
+                    Layout(name="Menu", size=20),
+                    Layout(name="Console")
                 )
                 layout["Header"].update(
                     Panel(Text("DEBUG", justify="center"))
                 )
                 layout["Footer"].update(
-                    Panel(Text("Status", justify="right"))
+                    Panel(Text(justify="right"), title="Status")
                 )
                 layout["Right"].update(
-                    Panel(Text("Satus Bar", justify="center"))
+                    Panel(Text(justify="center"), title="Status")
                 )
                 layout["Menu"].update(
-                    Panel(Text("Menu", justify="left"))
+                    Panel(self.printmenu, title="Menu")
                 )
                 layout["Console"].update(
-                    Panel("Console\n" + "\n".join(self.logs))
+                    Panel("\n".join(self.logs), title="Console")
                 )
             case "START_SCREEN":
                 layout.split(
@@ -86,6 +87,5 @@ class Screen():
                 layout["Title"].update(
                     Panel(Text(text2art("Screen\nError"), style="red"), border_style="red")
                 )
-        #console.print("\n".join(self.logs))
         os.system('clear') or None
         console.print(layout)

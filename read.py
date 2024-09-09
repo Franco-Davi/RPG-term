@@ -11,6 +11,9 @@ class Read():
     parser = Argument_Parser(add_help=False)
     subparsers = parser.add_subparsers(dest="command")
     
+    cmd_help = subparsers.add_parser("help")
+    cmd_help.add_argument("command", nargs="?", type=str, default="help")
+
     cmd_quit = subparsers.add_parser("quit")
     
     cmd_echo = subparsers.add_parser("echo")
@@ -20,5 +23,7 @@ class Read():
     cmd_screen.add_argument("select", type=str)
 
     cmd_save = subparsers.add_parser("save")
+    cmd_save.add_argument("file", nargs="?", type=int, default=0)
 
     cmd_load = subparsers.add_parser("load")
+    cmd_load.add_argument("file", nargs="?", type=int, default=0)
