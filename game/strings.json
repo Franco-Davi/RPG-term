@@ -1,0 +1,46 @@
+{
+    "ERROR": "ERROR: Option not configured, please notify the story creator. Sending your save file might help.",
+    "Cena 1": [
+        ["Você avista o castelo, ele parece tristemente abandonado", [
+            ["Analizar melhor", 1, ["comando1", "comando2"]],
+            ["Fechar os olhos", 4, ["comando1", "comando2"]]
+        ]],
+        ["O castelo está realmente destruído", [
+            ["Lamentar-se pelo passado, em memoria ao antigo palácio", 2, ["comando1", "comando2"]],
+            ["Engolir em seco e aprtar o simbolo do antigo reino", 2, ["comando1", "comando2"]]
+        ]],
+        ["Um sentimento de nostalgia se mistura com a triste lembrança do que você presenciou semanas atrás", [
+            ["Juntar suas coisas e entrar", 3, ["comando1", "comando2"]],
+            ["Ferchar os olhos", 4, ["comando1", "comando2"]]
+        ]],
+        ["Não há nada a explorar no velho castelo, você se depressia ainda mais com o que vê e resolve sair", [
+            ["Olhar para trás após sair", 0, ["comando1", "comando2"]]
+        ]],
+        ["A escuridão de suas palpebras esconde sua visão", [
+            ["Abrir os olhos", 0, ["comando1", "comando2"]],
+            ["Continuar de olhos fechados", 4, ["comando1", "comando2"]]
+        ]]
+    ],
+    "NOME DA CENA": [
+        ["TEXTO PLACEHOLDER", [
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]],
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]]
+        ]],
+        ["TEXTO PLACEHOLDER", [
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]],
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]]
+        ]],
+        ["TEXTO PLACEHOLDER", [
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]],
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]]
+        ]],
+        ["TEXTO PLACEHOLDER", [
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]],
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]]
+        ]],
+        ["TEXTO PLACEHOLDER", [
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]],
+            ["OPÇÃO PLACEHOLDER", 0, ["comando1", "comando2"]]
+        ]]
+    ]
+}
