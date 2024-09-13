@@ -1,0 +1,100 @@
+{
+    "game": {
+        "debug": true,
+        "running": true,
+        "ticks": 1,
+        "command": "save",
+        "screen": "MAIN_MENU",
+        "gameState": "STORY"
+    },
+    "screen": {
+        "ticks": 1,
+        "logs": [
+            "[bright_black][00000 2024-09-13 10:25:55]: [/bright_black][bright_black]begin[/bright_black]",
+            "Begining a new game"
+        ],
+        "command": "save",
+        "printmenu": ""
+    },
+    "player": {
+        "name": "",
+        "race": "",
+        "background": "",
+        "level": 0,
+        "exp": 0,
+        "bonus": 0,
+        "inventory": [],
+        "spells": [],
+        "atr": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "skill": {
+            "acrobatics": null,
+            "animal_handing": null,
+            "arcana": null,
+            "athletics": null,
+            "deception": null,
+            "history": null,
+            "insight": null,
+            "intimidation": null,
+            "investigation": null,
+            "medicine": null,
+            "nature": null,
+            "perception": null,
+            "performance": null,
+            "persuasion": null,
+            "religion": null,
+            "sleight_of_hand": null,
+            "stealth": null,
+            "survival": null
+        }
+    },
+    "teller": {
+        "moment": "Cena 1",
+        "id": 0,
+        "text": "Voc\u00ea avista o castelo, ele parece tristemente abandonado",
+        "options": [
+            [
+                "Analizar melhor",
+                1,
+                [
+                    "comando1",
+                    "comando2"
+                ]
+            ],
+            [
+                "Fechar os olhos",
+                4,
+                [
+                    "comando1",
+                    "comando2"
+                ]
+            ]
+        ],
+        "optionsTexts": [
+            "Analizar melhor",
+            "Fechar os olhos"
+        ],
+        "optionsIds": [
+            1,
+            4
+        ],
+        "optionsCommands": [
+            [
+                "comando1",
+                "comando2"
+            ],
+            [
+                "comando1",
+                "comando2"
+            ]
+        ],
+        "data": "",
+        "choice": null
+    }
+}
