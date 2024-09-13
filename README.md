@@ -20,10 +20,12 @@ Ainda quero deixar este código de certa forma "modular", permitindo que outras 
 - [x] Criação da classe Player para armazenar os atributos do jogador e os metodos para ações;
 - [x] Sistema de salvamente e carregamento com json;
 - [x] Adição de um comando 'help' para ajudar na utilização do jogo sem consulta externa;
-- [ ] Criar tela de inicio;
+- [x] Criar tela de inicio;
+- [x] Sistema de progressão de jogo estilo livro-jogo apartir da leitura de um json;
+- [ ] colorir os menus;
+- [ ] Criação do sistema de rolagens;
 - [ ] Criar tela de fim;
 - [ ] Criação de um sistema de inventário com lista;
-- [ ] Sistema de progressão de jogo estilo livro-jogo apartir da leitura de um json;
 - [ ] Criação de um sistema de combate;
 - [ ] Adicionar a possibilidade de itens com efeitos, desde simples proteção de armadura, até resistências e outras vantagens mágicas;
 - [ ] Adicionar sistema de magia.

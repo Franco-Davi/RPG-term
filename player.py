@@ -9,26 +9,28 @@ class Player():
             self.wis = 0
             self.cha = 0
 
+
     class c_skill():
         def __init__(self):
-            self.acrobatics = 0
-            self.animal_handing = 0
-            self.arcana = 0
-            self.athletics = 0
-            self.deception = 0
-            self.history = 0
-            self.insight = 0
-            self.intimidation = 0
-            self.investigation = 0
-            self.medicine = 0
-            self.nature = 0
-            self.perception = 0
-            self.performance = 0
-            self.persuasion = 0
-            self.religion = 0
-            self.sleight_of_hand = 0
-            self.stealth = 0
-            self.survival = 0
+            self.acrobatics = None
+            self.animal_handing = None
+            self.arcana = None
+            self.athletics = None
+            self.deception = None
+            self.history = None
+            self.insight = None
+            self.intimidation = None
+            self.investigation = None
+            self.medicine = None
+            self.nature = None
+            self.perception = None
+            self.performance = None
+            self.persuasion = None
+            self.religion = None
+            self.sleight_of_hand = None
+            self.stealth = None
+            self.survival = None
+
 
     def __init__(self):
         self.name = ""
@@ -40,9 +42,9 @@ class Player():
         self.inventory = []
         self.spells = []
 
-
         self.atr = self.c_atr()
         self.skill = self.c_skill()
+
 
     def save(self):
         data = {
@@ -50,6 +52,7 @@ class Player():
             "skill": self.skill.__dict__
         }
         return {**self.__dict__, **data}
+
 
     def mod(self, atr):
         mod = (atr - 10)/2
